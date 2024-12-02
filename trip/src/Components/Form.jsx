@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../style/App.css";
 
-const Form = () => {
+const Form = ({ onAddItem }) => {
   // declare the variables with useState hook
   const [description, setDescription] = useState("");
   const [quantity, setQuantity] = useState(1);
@@ -17,7 +17,9 @@ const Form = () => {
     //declare newItem that has description, quantity, packed(default: false)
     //and the id with Date.now's function to generate the id
     const newItem = { description, quantity, packed: false, id: Date.now() };
+    onAddItem(newItem);
     console.log(newItem);
+
     // After the function executed , make the state with default value
     setDescription("");
     setQuantity(1);
