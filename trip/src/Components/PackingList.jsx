@@ -11,8 +11,9 @@ const PackingList = () => {
     <>
       <div className="list">
         <ul>
+          {/* Render the child components */}
           {initialItems.map((item) => (
-            <Item obj={item} key={item.id} />
+            <Item props={item} key={item.id} />
           ))}
         </ul>
       </div>
@@ -20,14 +21,16 @@ const PackingList = () => {
   );
 };
 
-function Item({ obj }) {
+// Parent component of Item
+function Item({ props }) {
   return (
     <li>
-      <span style={obj.packed ? { textDecoration: "line-through" } : {}}>
-        {obj.quantity} {obj.description}
+      <span style={props.packed ? { textDecoration: "line-through" } : {}}>
+        {props.quantity} {props.description}
       </span>
-      <button>❌</button>
+      <button type="button">❌</button>
     </li>
   );
 }
+
 export default PackingList;
