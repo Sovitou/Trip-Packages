@@ -31,7 +31,7 @@ const Form = ({ onAddItem }) => {
         // declare submit function
         onSubmit={handleSubmit}
       >
-        <h3>What you want to pack on your trip ? 😎</h3>
+        <h3> Pack the items you need 😎</h3>
 
         <select
           // declare quantity as it value
