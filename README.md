@@ -1,6 +1,7 @@
 # Trip Packages Manager 🌍✈️
 
 ![Vercel Deployment](https://img.shields.io/badge/Deployed%20on-Vercel-blue?logo=vercel&style=flat-square)
+
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow?logo=javascript&style=flat-square)
 
 </br>
